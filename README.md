@@ -1,30 +1,35 @@
 # Money Generator
 
-Money Generator is a simple web application built with JavaScript that simulates a "virtual money generator." This project is designed as a basic exercise in programming logic, DOM manipulation, localStorage, event handling, and interface management using pure HTML, CSS, and JavaScript (no frameworks).
+Money Generator is a simple web application built with HTML, CSS, and JavaScript that simulates a "virtual money generator." This project is designed as a basic exercise in programming logic, DOM manipulation, localStorage usage, event handling, and simple UI management without frameworks.
 
 ## Features
 
 - **Manual Money Addition**  
-  Users can manually add money by clicking a button.
+  Users can manually increase their money balance by clicking a button.
 
 - **Auto Generate**  
-  Users can enable automatic money generation at set intervals (e.g., every 0.5 or 1 second) when they have enough funds.
+  Users can activate an auto-generate feature to increase money at a regular interval (e.g., every 0.5 seconds), provided they have enough balance to unlock it.
 
 - **Reset Money**  
-  Users can reset their money to the initial value with a specific cost.
+  Users can reset their balance to the initial value at the cost of a certain amount of money.
 
-- **Local Data Storage**  
-  The last money amount is saved in localStorage, so data persists even after refreshing the page.
+- **Local Storage**  
+  The current money amount is saved in `localStorage`, so your progress persists after refreshing or reopening the page.
+
+- **Simple Login Page**  
+  When the app is loaded, a login page will appear. You are free to enter any username you like, and any password (no restrictions).
 
 - **Simple Interface**  
-  The UI is designed to be simple and easy to use.
+  The UI is intentionally minimal and easy to use.
 
 ## How It Works
 
-1. Users can increase their money manually.
-2. Once the balance reaches a certain threshold, the auto generate feature can be activated.
-3. When auto generate is enabled, money will increase automatically at regular intervals.
-4. The reset feature allows users to reset their balance with a specified cost.
+1. When you open the app, you will see a login form. Enter any username and any password you wish (no validation required).
+2. After logging in, you can add money manually by clicking a button.
+3. Once your balance reaches a certain amount, you can enable the auto-generate feature.
+4. Auto-generate will add money automatically every interval.
+5. You can reset your balance at any time using the reset button (with a cost).
+6. All progress is saved locally in your browser.
 
 ## Installation & Usage
 
@@ -52,4 +57,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-> **Note:** This project is for educational and experimental purposes only. It does not represent real financial transactions or real money generation.
+> **Note:** This project is for educational and experimental purposes only. It does not represent actual financial transactions or real money generation.
