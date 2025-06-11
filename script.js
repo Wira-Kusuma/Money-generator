@@ -15,6 +15,19 @@ generate.addEventListener('click', function() {
     localStorage.setItem("uang", angka); // Simpan ke localStorage
 });
 
+let autogene = document.getElementById("auto").addEventListener('click', auto);
+
+function auto() {
+    if (Number(money.innerHTML) >= 10) {
+    let interval = setInterval(function() {
+        let angka = Number(money.innerHTML);
+        angka += 1;
+        money.innerHTML = angka;
+        localStorage.setItem("uang", angka); // Simpan ke localStorage
+    }, 500);
+}
+}
+
 // Event untuk tombol reset
 reset.addEventListener('click', function() {
     money.innerHTML = 0;
