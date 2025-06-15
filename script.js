@@ -64,7 +64,7 @@ reset.addEventListener('click', function() {
     localStorage.setItem("uang", 0); // Reset data di localStorage
 });
 
-
+// user login modal
 let user = document.getElementById("user");
 let modal = document.getElementById("modal");
 
@@ -72,6 +72,12 @@ document.getElementById("login").addEventListener('click', function() {
     let username = document.getElementById("username").value;
     user.innerText=username;
     modal.style.display="none";
+});
 
-    
+// logout
+let logout = document.getElementById("logout");
+
+logout.addEventListener("click", function() {
+    user.innerHTML="";
+    modal.style.display="flex";
 });
