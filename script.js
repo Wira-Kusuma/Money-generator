@@ -15,9 +15,16 @@ generate.addEventListener('click', function() {
     localStorage.setItem("uang", angka); // Simpan ke localStorage
 });
 
-let autogene = document.getElementById("autogen").addEventListener('click', auto);
 
-function auto() {
+let autogene1 = document.getElementById("autogen1");
+let autogene2 = document.getElementById("autogen2");
+let autogene3 = document.getElementById("autogen3");
+
+autogene1.addEventListener('click', auto1);
+autogene2.addEventListener('click', auto2);
+autogene3.addEventListener('click', auto3);
+
+function auto1() {
     if (Number(money.innerHTML) >= 10) {
         let interval = setInterval(function() {
         let angka = Number(money.innerHTML);
@@ -26,7 +33,29 @@ function auto() {
         localStorage.setItem("uang", angka);
         }, 500);
     }
-    autogene.style.display = "none";
+    autogene1.style.display = "none";
+}
+function auto2() {
+    if (Number(money.innerHTML) >= 100) {
+        let interval = setInterval(function() {
+        let angka = Number(money.innerHTML);
+        angka += 1;
+        money.innerHTML = angka;
+        localStorage.setItem("uang", angka);
+        }, 500);
+    }
+    autogene2.style.display = "none";
+}
+function auto3() {
+    if (Number(money.innerHTML) >= 500) {
+        let interval = setInterval(function() {
+        let angka = Number(money.innerHTML);
+        angka += 1;
+        money.innerHTML = angka;
+        localStorage.setItem("uang", angka);
+        }, 500);
+    }
+    autogene3.style.display = "none";
 }
 
 // Event untuk tombol reset

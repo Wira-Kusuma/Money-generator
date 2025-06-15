@@ -76,7 +76,7 @@ header img {
     justify-content: start;
 }
 
-button {
+.btn1 {
     margin: 5px;
     width: fit-content;
     height: 40px;
@@ -89,6 +89,11 @@ button {
     box-shadow: 4px 8px 24px 0 rgba(0,0,0,0.18), 2px 3px 8px 0 rgba(0,0,0,0.15);
     transition: ease-in-out 0.1s;
     font-size: 1.5rem;
+}
+
+.btn2 {
+    padding: 5px;
+    width: 100px;
 }
 
 button:active {
